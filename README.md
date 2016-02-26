@@ -5,4 +5,4 @@ I will usually always declare the interpreter to run. So all you need to do is a
 
 If I have a daft typo in the code let us know.
 
-If you are Zed Shaw. Thank you. If you are not go to his site and support his awesome work http://learnpythonthehardway.org/
+If you are Zed Shaw. Thank you. If you are not go to his site and support his awesome work http://learnpythonthehardway.org/book
