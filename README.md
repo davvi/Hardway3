@@ -21,4 +21,8 @@ ex25.py
 
 Note that this one doesn't start with #!/usr/bin/env python.. after completing the exersise listed on Zed's website, try to learn why I've not done this.
 
+ex26.py
+
+This file has been ported to pythong 3 .. However I have left Zed's errors in there as intended for this excersise.. Please go through and fix the errors. 
+
 
