@@ -17,4 +17,8 @@ ex11.py
 
 raw_input is now just input. I've made some obvious changes just to the strings, I'm Australian, Metric is awesome.. Live with it.. or just change it to make sense for you.
 
+ex25.py
+
+Note that this one doesn't start with #!/usr/bin/env python.. after completing the exersise listed on Zed's website, try to learn why I've not done this.
+
 
