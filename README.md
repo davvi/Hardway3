@@ -11,7 +11,7 @@ Excerise notes!
 
 ex1.py
 
-And for the rest of the work, you'll notice the change to the print statement. It is now a proper function with proper syntex.
+And for the rest of the work, you'll notice the change to the print statement. It is now a proper function with proper syntax.
 
 ex11.py
 
@@ -23,6 +23,11 @@ Note that this one doesn't start with #!/usr/bin/env python.. after completing t
 
 ex26.py
 
-This file has been ported to pythong 3 .. However I have left Zed's errors in there as intended for this excersise.. Please go through and fix the errors. 
+This file has been ported to python 3 .. However I have left Zed's errors in there as intended for this excersize.. Please go through and fix the errors. 
 
+ex41.py
 
+This one took a bit of work .. There where few changes to the standard library organisation in python 3.
+from urllib import urlopen is no from urllib.request import urlopen
+The file that we pull from the website is all ascii .. to make this properly work we decode this to utf-8.
+other then that .. there are the usual changes here.
