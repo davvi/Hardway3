@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import random
-from urllib import urlopen
+from urllib.request import urlopen
 import sys
 
 WORD_URL = "http://learncodethehardway.org/words.txt"
@@ -24,14 +24,14 @@ PHRASES = {
 }
 
 # do they want to drill phrases first
-if len(sys.argv) -- 2 and sys.argv[1] == "english":
+if len(sys.argv) == 2 and sys.argv[1] == "english":
     PHRASE_FIRST = True
 else:
     PHRASE_FIRST = False
 
 # load up the words from the website
-for word in urlopen(WORLD_URL).readlines():
-    WORDS.append(word.strip())
+for word in urlopen(WORD_URL).readlines():
+    WORDS.append(word.decode("utf-8").strip())
 
 def convert(snippet, phrase):
     class_names = [w.capitalize() for w in random.sample(WORDS, snippet.count("%%%"))]
@@ -66,8 +66,8 @@ def convert(snippet, phrase):
 
 try:
     while True:
-        snippets = PHRASES.keys()
-        random.shuffle(snippets)
+        snippets = (PHRASES.keys())
+        random.shuffle(list(snippets))
 
         for snippet in snippets:
             phrase = PHRASES[snippet]
@@ -75,10 +75,10 @@ try:
             if PHRASE_FIRST:
                 question, answer = answer, question
 
-            print question
+            print(question)
 
-            raw_input("> ")
-            print "ANSWER: %s\n\n" % answer
+            input("> ")
+            print("ANSWER: %s\n\n" % answer)
 except EOFError:
-    print "\nBye"
+    print("\nBye")
 
